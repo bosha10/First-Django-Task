@@ -1,0 +1,19 @@
+<html> 
+    <head> </head> 
+    <body> 
+        <h3> Welcome to Posts page </h3> 
+
+
+    <!-- {% csrf_token %} -->
+
+
+<br/>
+<textarea name = "newpost" rows="10" cols="20"  >
+
+     {% for p in allpost %}
+        {{ p.text }} <br/>
+     {% endfor %}
+</textarea>
+        <!-- hello {{ name }}  -->
+    </body> 
+</html>
